@@ -394,6 +394,7 @@ h5 {
 @media (max-width: 743px) {
   .top-bar {
     display: none;
+    max-width: 788px;
   }
 }
 
