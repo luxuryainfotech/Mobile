@@ -80,3 +80,20 @@ const swiper = new Swiper(".testimonial-swiper", {
             },
         });
 
+ document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+
+    let mailtoLink = `mailto:info@luxuryainfotech.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n\n" +
+        "Message:\n" + message
+    )}`;
+
+    window.location.href = mailtoLink;
+});
+
