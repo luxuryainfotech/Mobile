@@ -2310,6 +2310,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+    margin-bottom: -80px;
 }
 
 .portfolio-card {
@@ -2321,8 +2322,7 @@ footer {
 }
 
 .portfolio-card:hover {
-  border-color: var(--gold-border);
-    margin-bottom: -80px;
+  border-color: var(--gold-border); 
   box-shadow: var(--sh-md);
   transform: translateY(-4px);
 }
