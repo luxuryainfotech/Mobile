@@ -2653,7 +2653,7 @@ footer {
   padding: 50px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   border: 1px solid #e5e7eb;
 }
 
@@ -2686,7 +2686,7 @@ footer {
 .form-btn:hover {
   background: #2563eb;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37,99,235,0.25);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
 }
 
 @media (max-width: 768px) {
@@ -2702,7 +2702,66 @@ footer {
     font-size: 15px;
   }
 }
+/* ===== Tablet (1024px) ===== */
+@media (max-width: 1024px) {
+  .contact-form-section {
+    padding: 60px 20px;
+  }
 
+  .contact-form {
+    max-width: 600px;
+  }
+}
+
+/* ===== Mobile (768px) ===== */
+@media (max-width: 768px) {
+  .contact-form-section {
+    padding: 50px 15px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr; /* stack fields */
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea,
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.85rem;
+    padding: 11px 14px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+/* ===== Small Mobile (480px) ===== */
+@media (max-width: 480px) {
+  .contact-form-section {
+    padding: 40px 12px;
+  }
+
+  .contact-form-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-group label {
+    font-size: 0.75rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.82rem;
+  }
+}
 
 /* ============================================================
    RESPONSIVE
